@@ -35,9 +35,7 @@ namespace Lab3
                 {
                     if(stations[i] == from)
                     {
-                        
                         indexFrom = i;
-                        Console.WriteLine(indexFrom + " " + i);
                         if (indexTo != -1)
                         {
                             break;
@@ -46,7 +44,6 @@ namespace Lab3
                     if(stations[i] == to)
                     {
                         indexTo = i;
-                        Console.WriteLine(indexTo + " " + i);
                         if (indexFrom != -1)
                         {
                             break;
@@ -64,9 +61,7 @@ namespace Lab3
                     indexFrom = temp;
                 }
                 indexTo++;
-                Console.WriteLine(allLines[indexTo]);
                 string[] prices = allLines[indexTo].Split(',');
-                Console.WriteLine(prices[indexFrom]);
                 int price = Int32.Parse(prices[indexFrom]);
                 return price;
             }

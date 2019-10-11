@@ -1,7 +1,8 @@
-Utrecht Centraal,Gouda,Geldermalsen,Hilversum,Duivendrecht,Weesp
+Utrecht Centraal,Gouda,Geldermalsen,Hilversum,Duivendrecht,Weesp,Bilthoven
 0
 32,0
 26,58,0
 18,50,44,0
 31,54,57,18,0
 33,57,59,15,3,0
+44,80,90,120,140,180,0
