@@ -23,7 +23,8 @@ namespace Lab3
         {
             Date d = new Date();
             string date = d.getDate();
-            int id = generateID();
+            TicketID tID = new TicketID();
+            int id = tID.generateID();
 
             Ticket ticket = new Ticket(info, date, id);
             writeTicketToFile(ticket);
@@ -37,12 +38,5 @@ namespace Lab3
             File.AppendAllText("Tickets.txt", ticketToFile + Environment.NewLine);
         }
 
-        //Ticket IDs are currently a keyvaluepair with the date, the chance that this minimal implementation makes a not unique pair is small to none
-        public int generateID()
-        {
-            Random rand = new Random();
-            int id = rand.Next(100000000);         
-            return id;
-        }
     }
 }
