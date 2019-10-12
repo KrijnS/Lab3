@@ -249,12 +249,14 @@ namespace Lab3
 				pment = UIPayment.Cash;
 				break;
 			}
+            UIInfo info = new UIInfo((string)fromBox.SelectedItem,
+                (string)toBox.SelectedItem,
+                cls, way, dis, pment);
 
-            Date d = new Date();
-            string date = d.getDate();
-            return new UIInfo ((string)fromBox.SelectedItem,
-				(string)toBox.SelectedItem,
-				cls, way, dis, pment, date);
+            Ticket ticket = new Ticket(info, null, 0);
+            ticket.generateTicket(info);
+
+            return info;
           
 		}
 #endregion

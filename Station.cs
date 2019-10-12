@@ -61,6 +61,7 @@ namespace Lab3
                     indexFrom = temp;
                 }
                 indexTo++;
+                       
                 string[] prices = allLines[indexTo].Split(',');
                 int price = Int32.Parse(prices[indexFrom]);
                 return price;

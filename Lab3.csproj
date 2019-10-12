@@ -37,6 +37,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ticket.cs" />
     <Compile Include="Station.cs" />
     <Compile Include="Date.cs" />
     <Compile Include="Program.cs" />
